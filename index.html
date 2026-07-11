@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,7 +16,7 @@
         h1 {
             color: #4df0ff;
             margin-top: 20px;
-            font-size: 28px;
+            font-size: 24px;
         }
         p {
             color: #a0a5b5;
@@ -25,20 +25,29 @@
         }
         .container {
             padding: 15px;
-            max-width: 500px;
+            max-width: 1000px;
             margin: 0 auto;
+        }
+        .wallpaper-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 10px;
         }
         .card {
             background: #161925;
             border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-            margin-bottom: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .card img {
             width: 100%;
             height: auto;
             display: block;
+            object-fit: cover;
         }
         .download-btn {
             display: block;
@@ -49,6 +58,8 @@
             font-weight: bold;
             font-size: 16px;
             transition: 0.3s;
+            border: none;
+            cursor: pointer;
         }
         .download-btn:active {
             background: linear-gradient(135deg, #0083b0, #005670);
@@ -61,10 +72,38 @@
         <h1>Premium Wallpaper Hub</h1>
         <p>Tap on download to get high quality wallpapers</p>
 
-        <!-- Wallpaper Card -->
-        <div class="card">
-            <img src="file_000000006738720b87d8b4be0acf9c92.png" alt="Maa Durga Wallpaper">
-            <a href="file_000000006738720b87d8b4be0acf9c92.png" class="download-btn">Download HD</a>
+        <div class="wallpaper-grid">
+            
+            <!-- Wallpaper 1 -->
+            <div class="card">
+                <img src="file_000000006738720b87d8b4be0acf9c92.png" alt="Wallpaper 1">
+                <a href="https://gplinks.co/SJkqQs4" target="_blank" class="download-btn">Download HD</a>
+            </div>
+
+            <!-- Wallpaper 2 -->
+            <div class="card">
+                <img src="file_00000000337471fa9ef50f895e0c5cf6.png" alt="Wallpaper 2">
+                <a href="https://gplinks.co/2Uzyz" target="_blank" class="download-btn">Download HD</a>
+            </div>
+
+            <!-- Wallpaper 3 -->
+            <div class="card">
+                <img src="file_00000000745c71fbb39d8a0cb7ef2c7a.png" alt="Wallpaper 3">
+                <a href="https://gplinks.co/4mGra" target="_blank" class="download-btn">Download HD</a>
+            </div>
+
+            <!-- Wallpaper 4 -->
+            <div class="card">
+                <img src="file_0000000079d471fb8856243180ab5c7d.png" alt="Wallpaper 4">
+                <a href="https://gplinks.co/pMRM2Xf" target="_blank" class="download-btn">Download HD</a>
+            </div>
+
+            <!-- Wallpaper 5 -->
+            <div class="card">
+                <img src="file_00000000f5e071fa9c856b5d2a7c4f4b.png" alt="Wallpaper 5">
+                <a href="https://gplinks.co/WkTQ20pa" target="_blank" class="download-btn">Download HD</a>
+            </div>
+
         </div>
     </div>
 
